@@ -515,6 +515,7 @@ section {
 
 .development .plan-box,
 .evidence .evidence-card,
+.reflections .reflection-card,
 .reflection-panel,
 .pitch .video-placeholder,
 .contact-summary {
@@ -529,7 +530,8 @@ section {
   padding: 28px;
 }
 
-.development .plan-box span {
+.development .plan-box span,
+.reflections .reflection-card span {
   color: #149ddd;
   display: inline-block;
   font-family: "Poppins", sans-serif;
@@ -540,6 +542,7 @@ section {
 }
 
 .development .plan-box h3,
+.reflections .reflection-card h3,
 .reflection-panel h3,
 .pitch h3,
 .contact-summary h3 {
@@ -547,6 +550,11 @@ section {
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 14px;
+}
+
+.reflections .reflection-card {
+  height: 100%;
+  padding: 28px;
 }
 
 .reflection-panel {
@@ -1257,6 +1265,7 @@ a:hover {
 .about .content h3,
 .facts .count-box span,
 .resume .resume-title,
+.reflection-card h3,
 .evidence-card h3,
 .pitch-box h3,
 .contact .info h4,
@@ -1272,6 +1281,7 @@ a:hover {
 
 .about .content ul i,
 .facts .count-box i,
+.reflection-card span,
 .evidence-card i,
 .pitch-box i,
 .contact .info i,
@@ -1282,6 +1292,7 @@ a:hover {
 }
 
 .facts .count-box,
+.reflection-card,
 .evidence-card,
 .pitch-box,
 .contact .info,
@@ -1292,6 +1303,7 @@ a:hover {
 }
 
 .evidence-card,
+.reflection-card,
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet,
 .testimonials .swiper-pagination .swiper-pagination-bullet {
   border-color: var(--theme-soft-strong);
