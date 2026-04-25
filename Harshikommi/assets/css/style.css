@@ -1146,3 +1146,172 @@ section {
     padding-right: 20px 15px;
   }
 }
+
+/*--------------------------------------------------------------
+# Beige Theme Overrides
+--------------------------------------------------------------*/
+:root {
+  --theme-bg: #faf6ef;
+  --theme-surface: #fffaf3;
+  --theme-soft: #efe4d2;
+  --theme-soft-strong: #dfc9aa;
+  --theme-accent: #a8753b;
+  --theme-accent-dark: #6f4e2e;
+  --theme-ink: #2f261f;
+  --theme-muted: #6f6256;
+  --theme-sidebar: #2f261f;
+}
+
+body {
+  background: var(--theme-bg);
+  color: var(--theme-ink);
+}
+
+a {
+  color: var(--theme-accent);
+}
+
+a:hover {
+  color: var(--theme-accent-dark);
+}
+
+#header,
+#footer {
+  background: var(--theme-sidebar);
+}
+
+#header .profile img {
+  border-color: #5b4636;
+}
+
+#header .profile .social-links a {
+  background: #4a382b;
+}
+
+#header .profile .social-links a:hover,
+.back-to-top,
+.mobile-nav-toggle {
+  background: var(--theme-accent);
+}
+
+.back-to-top:hover {
+  background: var(--theme-accent-dark);
+}
+
+.nav-menu a,
+.nav-menu a:focus {
+  color: #d8cbbd;
+}
+
+.nav-menu a:hover,
+.nav-menu .active,
+.nav-menu .active:focus,
+.nav-menu li:hover > a {
+  color: #fff7ec;
+}
+
+.nav-menu a:hover i,
+.nav-menu .active i,
+.nav-menu .active:focus i,
+.nav-menu li:hover > a i {
+  color: var(--theme-soft-strong);
+}
+
+#hero:before {
+  background: rgba(47, 38, 31, 0.46);
+}
+
+#hero .hero-kicker,
+#hero p span {
+  border-color: var(--theme-soft-strong);
+}
+
+.btn-primary-action,
+.php-email-form button[type=submit],
+.contact .php-email-form button[type=submit],
+.services .icon-box .icon,
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active,
+.testimonials .swiper-pagination .swiper-pagination-bullet-active {
+  background: var(--theme-accent);
+}
+
+.btn-primary-action:hover,
+.php-email-form button[type=submit]:hover,
+.contact .php-email-form button[type=submit]:hover {
+  background: var(--theme-accent-dark);
+}
+
+.btn-secondary-action {
+  background: rgba(255, 250, 243, 0.18);
+  border-color: rgba(255, 250, 243, 0.58);
+}
+
+.section-bg,
+.skills .progress-bar-wrap,
+.resume .resume-item h5,
+.breadcrumbs {
+  background: var(--theme-soft);
+}
+
+.section-title h2,
+.about .content h3,
+.facts .count-box span,
+.resume .resume-title,
+.evidence-card h3,
+.pitch-box h3,
+.contact .info h4,
+.breadcrumbs ol li + li::before {
+  color: var(--theme-accent-dark);
+}
+
+.section-title h2::after,
+.skills .progress-bar,
+.evidence-link {
+  background: var(--theme-accent);
+}
+
+.about .content ul i,
+.facts .count-box i,
+.evidence-card i,
+.pitch-box i,
+.contact .info i,
+.portfolio #portfolio-flters li:hover,
+.portfolio #portfolio-flters li.filter-active,
+.services .icon-box:hover .title a {
+  color: var(--theme-accent);
+}
+
+.facts .count-box,
+.evidence-card,
+.pitch-box,
+.contact .info,
+.contact .php-email-form,
+.portfolio #portfolio-flters,
+.testimonials .testimonial-item .testimonial-wrap {
+  background: var(--theme-surface);
+}
+
+.evidence-card,
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet,
+.testimonials .swiper-pagination .swiper-pagination-bullet {
+  border-color: var(--theme-soft-strong);
+}
+
+.resume .resume-item {
+  border-left-color: var(--theme-accent-dark);
+}
+
+.resume .resume-item::before {
+  border-color: var(--theme-accent-dark);
+}
+
+.contact .info i {
+  background: var(--theme-soft);
+}
+
+.contact .info .email:hover i,
+.contact .info .address:hover i,
+.contact .info .phone:hover i {
+  background: var(--theme-accent);
+  color: #fff;
+}
