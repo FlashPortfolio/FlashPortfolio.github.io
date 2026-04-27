@@ -568,7 +568,7 @@ section {
   font-weight: 700;
 }
 
-.volunteer-carousel {
+.image-carousel {
   background: var(--theme-surface);
   border: 1px solid var(--theme-soft-strong);
   border-radius: 6px;
@@ -576,49 +576,50 @@ section {
   overflow: hidden;
 }
 
-.volunteer-carousel .carousel-item {
+.image-carousel .carousel-item {
   aspect-ratio: 16 / 9;
   background: var(--theme-soft);
 }
 
-.volunteer-carousel img {
+.image-carousel img {
   height: 100%;
   object-fit: cover;
+  width: 100%;
 }
 
-.volunteer-carousel .carousel-caption {
-  right: 0;
+.carousel-image-link {
+  cursor: zoom-in;
+  display: block;
+  height: 100%;
+}
+
+.image-carousel .carousel-caption {
+  background: linear-gradient(0deg, rgba(47, 38, 31, 0.82), rgba(47, 38, 31, 0));
   bottom: 0;
   left: 0;
-  padding: 28px 40px 34px;
+  padding: 48px 28px 24px;
+  right: 0;
   text-align: left;
-  background: linear-gradient(0deg, rgba(47, 38, 31, 0.82), rgba(47, 38, 31, 0.08));
 }
 
-.volunteer-carousel .carousel-caption h3 {
+.image-carousel .carousel-caption h3 {
   color: #fff7ec;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 700;
-  margin-bottom: 8px;
-}
-
-.volunteer-carousel .carousel-caption p {
-  color: #efe4d2;
   margin-bottom: 0;
-  max-width: 720px;
 }
 
-.volunteer-carousel .carousel-indicators [data-bs-target] {
+.image-carousel .carousel-indicators [data-bs-target] {
   background-color: var(--theme-soft-strong);
 }
 
-.volunteer-carousel .carousel-control-prev,
-.volunteer-carousel .carousel-control-next {
+.image-carousel .carousel-control-prev,
+.image-carousel .carousel-control-next {
   width: 10%;
 }
 
-.volunteer-carousel .carousel-control-prev-icon,
-.volunteer-carousel .carousel-control-next-icon {
+.image-carousel .carousel-control-prev-icon,
+.image-carousel .carousel-control-next-icon {
   background-color: rgba(47, 38, 31, 0.58);
   border-radius: 50%;
   background-size: 58%;
@@ -627,24 +628,20 @@ section {
 }
 
 @media (max-width: 575px) {
-  .volunteer-carousel .carousel-item {
+  .image-carousel .carousel-item {
     aspect-ratio: 4 / 5;
   }
 
-  .volunteer-carousel .carousel-caption {
-    padding: 22px 24px 30px;
+  .image-carousel .carousel-caption {
+    padding: 42px 22px 22px;
   }
 
-  .volunteer-carousel .carousel-caption h3 {
-    font-size: 20px;
+  .image-carousel .carousel-caption h3 {
+    font-size: 18px;
   }
 
-  .volunteer-carousel .carousel-caption p {
-    font-size: 14px;
-  }
-
-  .volunteer-carousel .carousel-control-prev-icon,
-  .volunteer-carousel .carousel-control-next-icon {
+  .image-carousel .carousel-control-prev-icon,
+  .image-carousel .carousel-control-next-icon {
     height: 34px;
     width: 34px;
   }
